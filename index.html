@@ -17,13 +17,14 @@
   <nav>
     <ul>
       <li><a href="#">Inicio</a></li>
-      <li><a href="#">Multimedia</a></li>
-      <li><a href="#">Contacto</a></li>
+      <li><a href="#multimedia">Multimedia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
     </ul>
   </nav>
 
   <main>
     <section>
+
       <h2>DIABLO DE LATA</h2>
 
       <p>
@@ -49,14 +50,12 @@
 
       <h3>Características</h3>
 
-      <!-- LISTA DESORDENADA -->
       <ul>
         <li>Chaqueta roja y azul.</li>
         <li>Máscara de lata pintada de rojo.</li>
         <li>Trenza de cabuya y sonaja tradicional.</li>
       </ul>
 
-      <!-- LISTA ORDENADA -->
       <h3>Preparación del personaje</h3>
       <ol>
         <li>Elaborar la máscara de lata.</li>
@@ -68,7 +67,7 @@
 
       <h3>Información general del Diablo de Lata</h3>
 
-      <table>
+      <table border="1">
         <thead>
           <tr>
             <th>Aspecto</th>
@@ -91,29 +90,30 @@
         </tbody>
       </table>
 
-      <h3>Imagen</h3>
-      <img src="assets/img/imagen1.jpg" alt="Diablo de Lata" width="300">
+      <!-- MULTIMEDIA -->
+      <h3 id="multimedia">Imagen</h3>
+      <img src="Imagen1.jpg" alt="Diablo de Lata" width="300">
 
       <h3>Video</h3>
       <video controls width="400">
-        <source src="assets/video/video1.mp4" type="video/mp4">
+        <source src="video1.mp4" type="video/mp4">
         Tu navegador no soporta video.
       </video>
 
-      <!-- ENLACE EXTERNO -->
+      <!-- ENLACE -->
       <h3>Más información</h3>
       <a href="https://es.wikipedia.org/wiki/Diablo_de_lata" target="_blank">
         Conocer más sobre el Diablo de Lata
       </a>
 
       <!-- FORMULARIO -->
-      <h3>Contacto</h3>
+      <h3 id="contacto">Contacto</h3>
       <form>
-        <label>Nombre:</label>
-        <input type="text" name="nombre" required>
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br><br>
 
-        <label>Correo:</label>
-        <input type="email" name="correo" required>
+        <label>Correo:</label><br>
+        <input type="email" name="correo" required><br><br>
 
         <button type="submit">Enviar</button>
       </form>
