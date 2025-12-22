@@ -1,0 +1,45 @@
+/* Personalización del botón Bootstrap */
+.btn-primary {
+  background-color: #ff5733;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #e74c3c;
+  transform: scale(1.05);
+}
+
+/* Cards con animación */
+.custom-card {
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Footer */
+footer a {
+  color: #333;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff5733;
+}
+
+/* Media Query personalizada */
+@media (max-width: 768px) {
+  header {
+    background-color: #ffe5dc;
+  }
+
+  body {
+    background-color: #f8f9fa;
+  }
+}

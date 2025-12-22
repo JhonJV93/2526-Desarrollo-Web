@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto Bootstrap CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Sitio</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ENCABEZADO -->
+  <header class="text-center p-5 bg-light">
+    <h1>Página Web con Bootstrap y CSS3</h1>
+    <p>Diseño moderno, responsivo y estilizado</p>
+  </header>
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <section class="container my-5">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="assets/img/imagen1.jpg" class="img-fluid card-img-top" alt="Imagen 1">
+          <div class="card-body">
+            <h3>Bootstrap Grid</h3>
+            <p>Uso del sistema de columnas para un diseño adaptable.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="assets/img/imagen1.jpg" class="img-fluid card-img-top" alt="Imagen 2">
+          <div class="card-body">
+            <h3>CSS3 Avanzado</h3>
+            <p>Animaciones, transiciones y efectos visuales.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card custom-card h-100">
+          <img src="assets/img/imagen1.jpg" class="img-fluid card-img-top" alt="Imagen 3">
+          <div class="card-body">
+            <h3>Diseño Responsivo</h3>
+            <p>Compatible con dispositivos móviles y escritorio.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BOTÓN CON COLLAPSE -->
+  <section class="container text-center mb-5">
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#contenido">
+      Ver más información
+    </button>
+
+    <div class="collapse mt-3" id="contenido">
+      <div class="card card-body">
+        Este contenido se muestra y se oculta usando el componente collapse de Bootstrap.
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="container mb-5">
+    <h2 class="text-center mb-4">Formulario de Contacto</h2>
+
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" placeholder="Ingrese su nombre">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" placeholder="Ingrese su email">
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Comentarios</label>
+        <textarea class="form-control" rows="4"></textarea>
+      </div>
+
+      <div class="text-center">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center bg-light p-4">
+    <p>© 2025 Proyecto Bootstrap</p>
+    <a href="#">Facebook</a> |
+    <a href="#">Twitter</a> |
+    <a href="#">Instagram</a>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
