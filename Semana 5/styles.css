@@ -1,4 +1,6 @@
-/* RESET */
+/* ===============================
+   RESET GENERAL
+================================ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +8,9 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CUERPO */
+/* ===============================
+   CUERPO
+================================ */
 body {
   min-height: 100vh;
   background: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -14,7 +18,9 @@ body {
   color: #ffffff;
 }
 
-/* ENCABEZADO */
+/* ===============================
+   ENCABEZADO
+================================ */
 header {
   text-align: center;
   margin-bottom: 25px;
@@ -24,7 +30,9 @@ header h1 {
   font-size: 2.4rem;
 }
 
-/* CONTENEDOR */
+/* ===============================
+   CONTENEDOR
+================================ */
 .contenedor {
   max-width: 1100px;
   margin: auto;
@@ -34,13 +42,16 @@ header h1 {
   backdrop-filter: blur(10px);
 }
 
-/* CONTROLES */
+/* ===============================
+   CONTROLES
+================================ */
 .controles {
   display: flex;
   gap: 15px;
   margin-bottom: 25px;
 }
 
+/* INPUT (VISIBLE Y FUNCIONAL) */
 .controles input {
   flex: 1;
   padding: 14px;
@@ -48,40 +59,41 @@ header h1 {
   border: none;
   outline: none;
   font-size: 16px;
-
-  background-color: #ffffff; /* FONDO BLANCO */
-  color: #000000;            /* TEXTO NEGRO */
+  background-color: #ffffff;
+  color: #000000;
 }
 
-/* Placeholder visible */
 .controles input::placeholder {
-  color: #555;
+  color: #555555;
 }
 
+/* BOTONES */
 .controles button {
   padding: 14px 18px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  color: #fff;
+  color: #ffffff;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #addImage {
-  background: #1197bc;
+  background-color: #00c6ff;
 }
 
 #deleteImage {
-  background: #ff416c;
+  background-color: #ff416c;
 }
 
 .controles button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* GALERÍA */
+/* ===============================
+   GALERÍA
+================================ */
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
@@ -102,13 +114,15 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* SELECCIONADA */
+/* IMAGEN SELECCIONADA */
 .galeria img.seleccionada {
   box-shadow: 0 0 0 4px #00ffd5;
   transform: scale(1.08);
 }
 
-/* ANIMACIÓN */
+/* ===============================
+   ANIMACIÓN
+================================ */
 .fade-in {
   animation: aparecer 0.5s ease;
 }
@@ -124,7 +138,9 @@ header h1 {
   }
 }
 
-/* RESPONSIVE */
+/* ===============================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
   .controles {
     flex-direction: column;
